@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light  page-top-margin">
+
+
+  <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-center" [ngClass]="{ 'show': navbarOpen }">
+    <ul class="navbar-nav mt-2">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/home">HOME</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          EXHIBITIONS
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" [routerLink]="['overview', 2011]">2011</a>
+          <a class="dropdown-item" [routerLink]="['overview', 2013]" href="#">2013</a>
+          <a class="dropdown-item"[routerLink]="['overview', 2012]" href="#">2012</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/about-us">ABOUT</a>
+      </li>
+
+      <li class="nav-item book">
+        <a class="nav-link" routerLink="/contact">
+          CONTACT</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div>
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,35 @@
+<nz-layout>
+  <nz-list nzGrid>
+    <div nz-row [nzGutter]="16">
+      <div nz-col [nzXXl]="8" [nzXl]="4" [nzLg]="6" [nzMd]="6" [nzSm]="12" [nzXs]="24" *ngFor="let item of projects">
+        <nz-list-item>
+          <nz-card [nzTitle]="item.name">
+            <div style="height: 504px;">
+              <nz-carousel [nzEffect]="effect" nzAutoPlay>
+                <div nz-carousel-content *ngFor="let index of item.images">
+                  <img nz-image width="70%" height="60%" class="mt-4" nzSrc="../../../assets/{{year}}/{{item.name}}/{{index}}"
+                    alt="" />
+                </div>
+              </nz-carousel>
+          
+            </div>
+          
+          </nz-card>
+          
+        
+        </nz-list-item>
+      </div>
+    </div>
+  </nz-list>
+</nz-layout>
+<!-- <nz-collapse-panel [nzHeader]="'read more now'"  >
+  <p style="margin:0;">
+    A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many
+    households across the world.
+  </p>
+</nz-collapse-panel> -->
+
+
+
+
+<!--  -->
