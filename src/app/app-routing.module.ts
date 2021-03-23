@@ -1,13 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { YearOverviewComponent } from './year-overview/year-overview.component';
-
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { HomeComponent } from './components/home/home.component';
+import { YearOverviewComponent } from './components/year-overview/year-overview.component';
+4;
 const routes: Routes = [
   //client components
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'overview/:year', component: YearOverviewComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'about-me', component: AboutComponent },
 ];
 
 @NgModule({
