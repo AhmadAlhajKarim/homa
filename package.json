@@ -9,7 +9,6 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "heroku-postbuild": "ng build --prod"
-
   },
   "private": true,
   "dependencies": {
@@ -22,6 +21,7 @@
     "@angular/platform-browser-dynamic": "~11.2.0",
     "@angular/router": "~11.2.0",
     "bootstrap": "^4.6.0",
+    "express": "^4.17.1",
     "ng-zorro-antd": "^11.2.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
