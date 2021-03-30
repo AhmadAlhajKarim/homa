@@ -21,7 +21,7 @@ import { NzCollapseModule } from 'ng-zorro-antd/collapse';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { YearOverviewComponent } from './components/year-overview/year-overview.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { AboutComponent } from './about/about.component';
+import { AboutComponent } from './components/about/about.component';
 
 registerLocaleData(en);
 

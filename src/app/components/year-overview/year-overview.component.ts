@@ -11,83 +11,37 @@ import { BehaviorSubject } from 'rxjs';
 export class YearOverviewComponent implements OnInit {
   _year = parseInt(this._route.snapshot.paramMap.get('year'));
   private _projects: Array<[]>;
-  private _projects$: BehaviorSubject<[]>;
-  projects;
-
+  private _project$: BehaviorSubject<any>;
+  private _currentProjectImages$: BehaviorSubject<[]>;
+  position="top"
   effect = 'scrollx';
   constructor(private _route: ActivatedRoute, private http: HttpClient) {
     this._projects = new Array();
-    this._projects$ = new BehaviorSubject<[]>([]);
+    this._project$ = new BehaviorSubject<any>(null);
+    this._currentProjectImages$ = new BehaviorSubject<[]>([]);
   }
 
   ngOnInit(): void {
     this._route.paramMap.subscribe((el: any) => {
-      console.log(el.params.year);
       this.http.get('../../../assets/data.json').subscribe((data: any) => {
         this._projects = data;
-        this._projects$.next(
-          this._projects.find((el: any) => (el.year = el.params.year))
+        this._project$.next(
+          this._projects.find((pr: any) => pr.year == el.params.year)
         );
+        this._currentProjectImages$.next(this.project$.value.images);
       });
     });
-
-    let i = [
-      {
-        year: 2011,
-        projects: [
-          {
-            name: 'shareme',
-            description: '',
-            images: [
-              '1.jpg',
-              '2.jpg',
-              '3.jpg',
-              '4.jpg',
-              '5.jpg',
-              '6.jpg',
-              '7.jpg',
-              '8.jpg',
-              '9.jpg',
-              '10.jpg',
-            ],
-          },
-          {
-            name: 'test',
-            description: '',
-            images: ['1.jpg', '2.jpg'],
-          },
-        ],
-      },
-      {
-        year: 2013,
-        projects: [
-          {
-            name: 'Aesthetic of a zebra',
-            description: '',
-            images: [
-              '1.jpg',
-              '2.jpg',
-              '3.jpg',
-              '4.jpg',
-              '5.jpg',
-              '6.jpg',
-              '7.jpg',
-              '8.jpg',
-            ],
-          },
-        ],
-      },
-    ];
-
-    this.projects = i.find((el) => el.year === this._year).projects;
   }
 
   get year() {
     return this._year;
   }
 
-  get projects$() {
-    console.log(this._projects$.value);
-    return this._projects$;
+  get project$() {
+    return this._project$;
+  }
+
+  get currentProjectImages$() {
+    return this._currentProjectImages$;
   }
 }

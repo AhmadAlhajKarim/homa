@@ -1,5 +1,10 @@
 <div class="container form-bg p-3 mt-5">
 
+  <section class="container">
+    <p>If you would like to contact Homa about a project proposal or any other enquiry please use the
+      following email address <a href="mailto:homaarkani@yahoo.com">homaarkani@yahoo.com</a> or the contact form below.
+    </p>
+  </section>
   <form method="post" [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
     <div class="form-group">
       <label for="fullname">Nom:</label>
@@ -22,7 +27,7 @@
     </div>
 
     <button class="btn btn-green font-weight-bold"
-      style="background-color: orange; color: white; font-size: 1.6em; border-radius: 2em;">ENVOYEZ <i nz-icon
+      style="background-color: orange; color: white; font-size: 1.9em; border-radius: 2em;">Send <i nz-icon
         nzType="right"></i>
     </button>
   </form>
