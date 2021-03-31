@@ -22,11 +22,12 @@ import { NzGridModule } from 'ng-zorro-antd/grid';
 import { YearOverviewComponent } from './components/year-overview/year-overview.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { AboutComponent } from './components/about/about.component';
+import { ProjectComponent } from './components/project/project.component';
 
 registerLocaleData(en);
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, YearOverviewComponent, ContactComponent, AboutComponent],
+  declarations: [AppComponent, HomeComponent, YearOverviewComponent, ContactComponent, AboutComponent, ProjectComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

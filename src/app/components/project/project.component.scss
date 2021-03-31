@@ -1,0 +1,12 @@
+.center-fit {
+  max-width: 100%;
+  max-height: 100vh;
+  margin: auto;
+}
+
+[nz-carousel-content] {
+  text-align: center;
+  min-height: 400px;
+  margin-bottom: 60px;
+  overflow: hidden;
+}
