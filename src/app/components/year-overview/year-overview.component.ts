@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { NzCarouselComponent } from 'ng-zorro-antd/carousel';
 import { BehaviorSubject } from 'rxjs';
 
 @Component({
@@ -9,6 +10,17 @@ import { BehaviorSubject } from 'rxjs';
   styleUrls: ['./year-overview.component.scss'],
 })
 export class YearOverviewComponent implements OnInit {
+  @ViewChild(NzCarouselComponent, { static: false }) myCarousel: NzCarouselComponent;
+
+  next() {
+    console.log(this.myCarousel.activeIndex)
+    this.myCarousel.next();
+  }
+
+  pre(){
+    this.myCarousel.pre();
+
+  }
   _year = parseInt(this._route.snapshot.paramMap.get('year'));
   private _projects: Array<[]>;
   private _project$: BehaviorSubject<any>;

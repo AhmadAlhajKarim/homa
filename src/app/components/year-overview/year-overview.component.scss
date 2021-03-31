@@ -10,45 +10,28 @@
   overflow: hidden;
 }
 
-img{
+img {
   object-fit: cover;
 
 }
 
 .topbar-not-square {
+  color: white;
   position: relative;
-  background-color: #475;
 }
 
 .topbar-square {
   padding: 1.7em;
-  background-color: #475;
 }
 
-// nz-carousel {
-//   height: 400px;
-//   width: 800px;
-// }
-
-// img {
-//   height: 400px;
-//   width: 800px;
-// }
-
-// @media only screen and (max-width: 600px) {
-//   nz-carousel {
-//     height: 200px;
-//     width: 400px;
-//   }
-
-//   img {
-//     height: 200px;
-//     width: 400px;
-//   }
-// }
 
 
-
+button {
+  margin-top: 20em;
+  height: 5em;
+  width: 3em;
+  background-color: black;
+}
 
 .imgbox {
   display: grid;
@@ -80,5 +63,3 @@ img{
   width: 10%;
   /* Set the width of the positioned div */
 }
-
-
