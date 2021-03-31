@@ -3,13 +3,6 @@
 }
 
 
-// img {
-//   background: url("https://images.unsplash.com/photo-1522204538344-922f76ecc041?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60") 50% 50% no-repeat;
-//   width: auto;
-//   height: auto;
-// }
-
-
 [nz-carousel-content] {
   text-align: center;
   min-height: 700px;
@@ -17,23 +10,34 @@
   overflow: hidden;
 }
 
+img {
 
-.bg {
-  /* The image used */
-  background-image: url("../../../assets/background.jpg");
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    object-fit: cover;
 }
+// nz-carousel {
+//   height: 400px;
+//   width: 800px;
+// }
 
-button {
-  color: red !important;
-}
+// img {
+//   height: 400px;
+//   width: 800px;
+// }
+
+// @media only screen and (max-width: 600px) {
+//   nz-carousel {
+//     height: 200px;
+//     width: 400px;
+//   }
+
+//   img {
+//     height: 200px;
+//     width: 400px;
+//   }
+// }
+
+
+
 
 .imgbox {
   display: grid;
@@ -67,3 +71,15 @@ button {
 }
 
 
+.slick-dots-bottom{
+  background-color: black !important;
+}
+.slick-dots{
+  background-color: black !important;
+
+}
+
+ button{
+  background-color: black !important  ;
+
+}

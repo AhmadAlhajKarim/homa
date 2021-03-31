@@ -13,7 +13,7 @@ export class YearOverviewComponent implements OnInit {
   private _projects: Array<[]>;
   private _project$: BehaviorSubject<any>;
   private _currentProjectImages$: BehaviorSubject<[]>;
-  position="top"
+  dotPosition = 'top';
   effect = 'scrollx';
   constructor(private _route: ActivatedRoute, private http: HttpClient) {
     this._projects = new Array();
