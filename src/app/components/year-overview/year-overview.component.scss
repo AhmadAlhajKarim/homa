@@ -5,15 +5,26 @@
 
 [nz-carousel-content] {
   text-align: center;
-  min-height: 700px;
+  min-height: 370px;
   margin-bottom: 60px;
   overflow: hidden;
 }
 
-img {
+img{
+  object-fit: cover;
 
-    object-fit: cover;
 }
+
+.topbar-not-square {
+  position: relative;
+  background-color: #475;
+}
+
+.topbar-square {
+  padding: 1.7em;
+  background-color: #475;
+}
+
 // nz-carousel {
 //   height: 400px;
 //   width: 800px;
@@ -71,15 +82,3 @@ img {
 }
 
 
-.slick-dots-bottom{
-  background-color: black !important;
-}
-.slick-dots{
-  background-color: black !important;
-
-}
-
- button{
-  background-color: black !important  ;
-
-}
