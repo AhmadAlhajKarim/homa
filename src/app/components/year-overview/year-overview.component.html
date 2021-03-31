@@ -1,24 +1,21 @@
-<nz-carousel [nzEffect]="effect" [nzEffect]="'scrollx'" nzAutoPlay [nzDots]="false">
+<nz-carousel [nzEffect]="effect" [nzEffect]="'scrollx'" [nzDots]="false" [nzEnableSwipe]="false">
   <div class="imgbox" nz-carousel-content *ngFor="let item of currentProjectImages$ | async">
-    <img class="center-fit  img-thumbnail " nz-image nzSrc="../../../assets/{{project$.value.project}}//{{item.name}}"
+    <img class="center-fit mt-2 img-thumbnail " nz-image nzSrc="../../../assets/{{project$.value.project}}//{{item.name}}"
       alt="item.name" />
- 
-    <p *ngIf="item.isSquare" class="font-weight-bold topbar-square">{{item.description}}</p>
-    <p *ngIf="!item.isSquare" class="font-weight-bold topbar-not-square">{{item.description}}</p>
-    <!-- <div class="text text-white">
-      <p class="font-weight-bold">{{item.description}}</p>
-    </div> -->
+
+    <p  class="font-weight-bold topbar">{{item.description}}</p>
+
   </div>
 </nz-carousel>
 <button class="carousel-control-prev " (click)="pre()" type="button" data-bs-target="#carouselExampleCaptions"
-data-bs-slide="prev">
-<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-<span class="visually-hidden"></span>
+  data-bs-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden"></span>
 </button>
 <button (click)="next()" class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-data-bs-slide="next">
-<span class="carousel-control-next-icon" aria-hidden="true"></span>
-<span class="visually-hidden"></span>
+  data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden"></span>
 </button>
 <div class="mt-5">
   <h4 class="text-center mt-3  font-weight-bold"> {{project$.value.project }}
