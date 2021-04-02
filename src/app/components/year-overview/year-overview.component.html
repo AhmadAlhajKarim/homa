@@ -1,4 +1,4 @@
-<nz-carousel [nzEffect]="effect" [nzEffect]="'scrollx'" [nzDots]="false" [nzEnableSwipe]="false">
+<nz-carousel [nzEffect]="effect"  [nzDots]="false" [nzEnableSwipe]="false" [nzAutoPlaySpeed]="4000" nzAutoPlay>
   <div class="imgbox" nz-carousel-content *ngFor="let item of currentProjectImages$ | async">
     <img class="center-fit mt-2 img-thumbnail " nz-image nzSrc="../../../assets/{{project$.value.project}}//{{item.name}}"
       alt="item.name" />
