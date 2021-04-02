@@ -23,11 +23,12 @@ import { YearOverviewComponent } from './components/year-overview/year-overview.
 import { ContactComponent } from './components/contact/contact.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProjectComponent } from './components/project/project.component';
+import { NewsComponent } from './components/news/news.component';
 
 registerLocaleData(en);
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, YearOverviewComponent, ContactComponent, AboutComponent, ProjectComponent],
+  declarations: [AppComponent, HomeComponent, YearOverviewComponent, ContactComponent, AboutComponent, ProjectComponent, NewsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -41,8 +42,7 @@ registerLocaleData(en);
     NzListModule,
     NzGridModule,
     NzCollapseModule,
-    ReactiveFormsModule,
-
+    ReactiveFormsModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent],
