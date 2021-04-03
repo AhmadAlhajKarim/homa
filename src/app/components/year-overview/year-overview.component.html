@@ -1,24 +1,20 @@
-<nz-carousel [nzEffect]="effect"  [nzDots]="false" [nzEnableSwipe]="false" [nzAutoPlaySpeed]="4000" nzAutoPlay>
+<br>
+<nz-carousel [nzEffect]="effect" [nzDots]="true" [nzDotPosition]="dotPosition" [nzEnableSwipe]="true"
+  [nzAutoPlaySpeed]="4000" nzAutoPlay>
   <div class="imgbox" nz-carousel-content *ngFor="let item of currentProjectImages$ | async">
-    <img class="center-fit mt-2 img-thumbnail " nz-image nzSrc="../../../assets/{{project$.value.project}}//{{item.name}}"
+
+    <img class="center-fit img-thumbnail " nz-image nzSrc="../../../assets/{{project$.value.project}}//{{item.name}}"
       alt="item.name" />
 
-    <p  class="font-weight-bold topbar">{{item.description}}</p>
+    <p class="font-weight-bold topbar">{{item.description}}</p>
 
   </div>
 </nz-carousel>
-<button class="carousel-control-prev " (click)="pre()" type="button" data-bs-target="#carouselExampleCaptions"
-  data-bs-slide="prev">
-  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  <span class="visually-hidden"></span>
+<button class="carousel-control-prev black" (click)="pre()" type="button">
+  < </button> <button (click)="next()" class="carousel-control-next black" type="button">>
 </button>
-<button (click)="next()" class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-  data-bs-slide="next">
-  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  <span class="visually-hidden"></span>
-</button>
-<div class="mt-5">
-  <h4 class="text-center mt-3  font-weight-bold"> {{project$.value.project }}
+<div>
+  <h4 class="text-center font-weight-bold text-uppercase"> {{project$.value.project }}
   </h4>
   <br>
   <section class="container">
@@ -26,11 +22,4 @@
       {{project$.value.description}}
     </p>
   </section>
-
-
-
-
 </div>
-<!-- <div class="text text-white">
-        <p class="font-weight-bold">{{item.description}}</p>
-      </div> -->

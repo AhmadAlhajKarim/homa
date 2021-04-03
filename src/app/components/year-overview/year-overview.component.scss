@@ -2,7 +2,6 @@
   font-family: "Lato", sans-serif;
 }
 
-
 [nz-carousel-content] {
   text-align: center;
   min-height: 370px;
@@ -15,23 +14,21 @@ img {
 }
 
 
-
-.topbar {
-  padding: 1.7em;
-}
-
-
-
 button {
-  margin-top: 20em;
+
+  margin-top: 7em;
   height: 5em;
   width: 3em;
-  background-color: black;
+  padding: 0;
+  border: none;
+  background: none;
 }
 
-.imgbox {
-  display: grid;
-  height: 100%;
+.black {
+  color: black;
+  font-size: 3em;
+  font-weight: bold;
+
 }
 
 .center-fit {
@@ -40,22 +37,9 @@ button {
   margin: auto;
 }
 
-.bottom-left {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-}
 
-.text {
-  background-color: rgba(15, 14, 14, 0.3);
-  border-radius: 15px;
-  position: absolute;
-  z-index: 999;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  top: 85%;
-  /* Adjust this value to move the positioned div up and down */
-  width: 10%;
-  /* Set the width of the positioned div */
-}
+@media only screen and (max-width: 1065px),
+only screen and (max-device-width: 767px) {}
+
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {}

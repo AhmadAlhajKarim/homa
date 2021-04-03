@@ -2,3 +2,9 @@ div {
     margin-top: 4em;
   text-align: center;
 }
+.responsive {
+  width: 100%;
+  
+  max-width: 400px;
+  height: auto;
+}
