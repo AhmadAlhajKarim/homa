@@ -1,19 +1,20 @@
 <br>
-<nz-carousel [nzEffect]="effect" [nzDots]="true" [nzDotPosition]="dotPosition" [nzEnableSwipe]="true"
-  [nzAutoPlaySpeed]="4000" nzAutoPlay>
+<nz-carousel [nzEffect]="effect" [nzAutoPlaySpeed]="4000" nzAutoPlay>
   <div class="imgbox" nz-carousel-content *ngFor="let item of currentProjectImages$ | async">
+    <!-- <p  class="font-weight-bold topbar-square">{{item.description}}</p> -->
+    <!-- <p class="font-weight-bold topbar">{{item.description}}</p> -->
 
     <img class="center-fit img-thumbnail " nz-image nzSrc="../../../assets/{{project$.value.project}}//{{item.name}}"
       alt="item.name" />
 
-    <p class="font-weight-bold topbar">{{item.description}}</p>
+      <p class="font-weight-bold topbar ">{{item.description}}</p>
 
   </div>
 </nz-carousel>
 <button class="carousel-control-prev black" (click)="pre()" type="button">
   < </button> <button (click)="next()" class="carousel-control-next black" type="button">>
 </button>
-<div>
+<div class="mt-5">
   <h4 class="text-center font-weight-bold text-uppercase"> {{project$.value.project }}
   </h4>
   <br>
