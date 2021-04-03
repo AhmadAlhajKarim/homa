@@ -4,8 +4,7 @@
 
 [nz-carousel-content] {
   text-align: center;
-  min-height: 353px;
-  margin-bottom: 60px;
+  min-height: 355px;
   overflow: hidden;
 }
 
@@ -40,7 +39,13 @@ only screen and (max-device-width: 767px) {
     display: none;
   }
 }
-
+@media only screen and (max-width: 600px) {
+  [nz-carousel-content] {
+    text-align: center;
+    min-height: auto;
+    overflow: hidden;
+  }
+}
 
 
 .topbar-square {
