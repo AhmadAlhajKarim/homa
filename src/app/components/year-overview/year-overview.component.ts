@@ -13,7 +13,6 @@ export class YearOverviewComponent implements OnInit {
   @ViewChild(NzCarouselComponent, { static: false }) myCarousel: NzCarouselComponent;
 
   next() {
-    console.log(this.myCarousel.activeIndex)
     this.myCarousel.next();
   }
 

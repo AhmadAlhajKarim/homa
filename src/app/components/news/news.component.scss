@@ -1,9 +1,7 @@
 .a-style {
   color: #424242;
-
-  font-size: 1.2em;
+  font-size:2vw;
 }
-
 
 * {
   font-family: "Lato", sans-serif;
@@ -42,6 +40,8 @@ a {
   border-style: groove;
   border-width: 0.03em;
   padding: 0.3em;
+  border-collapse: separate;
+  
 }
 
 .iframe-container {

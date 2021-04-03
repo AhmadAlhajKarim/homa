@@ -9,11 +9,11 @@ export class AppComponent {
   title = 'homa';
 
   navbarOpen = false;
-  dropdown = true
-  
+  dropdown = true;
 
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
   }
 
+  constructor() {}
 }
