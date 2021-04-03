@@ -17,11 +17,11 @@
 </button>
 <div class="mt-5">
 
-  <h4 *ngIf="project$.value !==null" class="text-center font-weight-bold text-uppercase"> {{project$.value.project }}
+  <h4 *ngIf="project$.value !==null" class="text-center font-weight-bold text-uppercase "> {{project$.value.project }}
   </h4>
   <br>
   <section class="container">
-    <p *ngIf="project$.value!= null" class="ml-5 mr-5 pb-5">
+    <p *ngIf="project$.value!= null" class="ml-5 mr-5 pb-5 text-align">
       {{project$.value.description}}
     </p>
   </section>

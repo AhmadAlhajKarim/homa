@@ -1,10 +1,16 @@
 div {
-    margin-top: 4em;
+  margin-top: 4em;
   text-align: center;
 }
-.responsive {
-  width: 100%;
-  
-  max-width: 400px;
-  height: auto;
+
+
+.text-align {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.show-less {
+  height: 4rem;
+  overflow: hidden;
+  padding: 1rem;
 }
