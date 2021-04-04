@@ -1,6 +1,14 @@
 .a-style {
   color: #424242;
   font-size: 2vw;
+  padding: 0.1em;
+  // border-collapse: separate;
+  margin: 4em auto;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 p {
@@ -43,27 +51,7 @@ section {
   // }
 }
 
-a {
-  // border-style: groove;
-  // border-width: 0.03em;
-  padding: 0.1em;
-  // border-collapse: separate;
-  margin: 4em auto;
-  width: 50px;
-  height: 50px;
-  border: 1px solid black;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
 
-}
-
-
-// div {
-//   margin: 4em auto;
-//   width: 50px;
-//   height: 50px;
-//   border: 10px solid black;
-// }
 
 .iframe-container {
   overflow: hidden;
