@@ -7,7 +7,7 @@
 [nz-carousel-content] {
   text-align: center;
   min-height: 400px;
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
   overflow: hidden;
 }
 
@@ -18,4 +18,8 @@
 .text-align {
   text-align: justify;
   text-justify: inter-word;
+}
+
+.spacing{
+   margin-top: 0;
 }

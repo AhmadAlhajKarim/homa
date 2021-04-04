@@ -25,6 +25,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ProjectComponent } from './components/project/project.component';
 import { NewsComponent } from './components/news/news.component';
 
+
 registerLocaleData(en);
 
 @NgModule({

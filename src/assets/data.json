@@ -3,15 +3,33 @@
      "project": "Share me",
      "description": "My ideas were sparked with a few portraits with non-conventional and ridiculous conditions which was a reflection of the teenage generation of Iranian women, which I enter to my paintings.Since the identity crisis of the new generation of Iranian women was and is one of my intellectual concerns, I addressed this issue in most of my paintings. The generation who is  between the limits and rules of everyday reality and fantasy in the free and joyful swing and the boundaries between beauty and obscenity has gradually changed to grotesque figures. As Stuart Hall said these people are in the process of being others. They see themselves as \u201Cother\u201D inferior of westerners. Their identity is made through the mirror of western media.\r\nContrary to what seems to be in appearance, they traditionally think and act in many ways. This feeling of inferiority comes from the obsession with hormonal activity and sexual repression.\r\nTo understand these behaviors, I became curious in their relationships to know how they act, what are their interests and their desire. Vanity, excess, artifice and extravagance .they are the first words that first come to our mind. Since extremes of exaggeration has become the character of this generation, I display it in a grotesque atmosphere and give it a painting exhibition called \u201Cshare me\u201D which lasted almost two years.\r\nOn the other hand, we see surrealistic shapes in some artworks which it also reflects the time and place I\u2019ve ever had and lived. Insist on loyalty to the elemental form as a unit and only element which the meaning of painting arise from it, is also a reflection of this situation.\r\nIn my point of view, the Iranian modern art target is war of ideas or community development. It\u2019s a conscious creativity, fact oriented, partially oriented which is used for guiding or proving ideas to others.On the other hand, artists facing the universal language of artistic self-expression with wide array and variety of different visual features and in the other hand they\u2019ve the traditional and native thus national visual heritages.\r\nAnd according to the times in which the artist lives, and s\/he\u2019s inner needs and demands would use some of these feasibilities and possibilities, but they also would give a personal and internal coordination to it. Hence the mission of my art is excepting to current situation, perhaps it become turbulence to my inner valve.\r\n",
      "images": [{
-         "name": "1.jpg",
-         "description": "Dance with me | oil on canvas | 100 × 100 cm | 2011",
-         "isSquare": "true"
-       },
-       {
          "name": "2.jpg",
          "description": "Happy birthday | oil on canvas | 100 × 200 cm | 2010",
          "isSquare": "false"
        },
+       {
+         "name": "10.jpg",
+         "description": "You fucked me up | oil on canvas | 100 × 200 cm | 2011",
+         "isSquare": "false"
+       },
+       {
+         "name": "5.jpg",
+         "description": "Pani Monroe | oil on canvas | 100 × 150 cm | 2011",
+         "isSquare": "false"
+
+       },
+
+       {
+         "name": "8.jpg",
+         "description": "Tide letter | oil on canvas | 100 × 100 cm | 2011",
+         "isSquare": "true"
+       },
+       {
+         "name": "1.jpg",
+         "description": "Dance with me | oil on canvas | 100 × 100 cm | 2011",
+         "isSquare": "true"
+       },
+
        {
          "name": "3.jpg",
          "description": "Just for you | oil on canvas | 170 × 1000 cm | 2011",
@@ -24,12 +42,7 @@
          "isSquare": "true"
 
        },
-       {
-         "name": "5.jpg",
-         "description": "Pani Monroe | oil on canvas | 100 × 150 cm | 2011",
-         "isSquare": "false"
 
-       },
        {
          "name": "6.jpg",
          "description": "Share me | oil on canvas | 100 × 150 cm | 2010",
@@ -41,16 +54,6 @@
          "description": "Shine on me | oil on canvas | 100 × 150 cm | 2010",
          "isSquare": "true"
 
-       },
-       {
-         "name": "8.jpg",
-         "description": "Tide letter | oil on canvas | 100 × 100 cm | 2011"
-
-       },
-       {
-         "name": "10.jpg",
-         "description": "You fucked me up | oil on canvas | 100 × 200 cm | 2011",
-         "isSquare": "false"
        }
      ]
    },
@@ -62,6 +65,18 @@
          "name": "1.jpg",
          "description": "Pls shut the hose tightly | oil on canvas | 120 × 80 cm | 2013",
          "isSquare": "false"
+       },
+       {
+         "name": "5.jpg",
+         "description": "The parents | oil on canvas | 120 × 80 cm | 2013",
+         "isSquare": "false"
+
+       },
+       {
+         "name": "6.jpg",
+         "description": "The speed | oil on canvas | 120 × 80 cm | 2012",
+         "isSquare": "false"
+
        },
        {
          "name": "2.jpg",
@@ -81,18 +96,7 @@
          "isSquare": "true"
 
        },
-       {
-         "name": "5.jpg",
-         "description": "The parents | oil on canvas | 120 × 80 cm | 2013",
-         "isSquare": "false"
 
-       },
-       {
-         "name": "6.jpg",
-         "description": "The speed | oil on canvas | 120 × 80 cm | 2012",
-         "isSquare": "false"
-
-       },
        {
          "name": "7.jpg",
          "description": "The thriller | oil on canvas | 200 × 100 cm | 2012",
@@ -122,26 +126,23 @@
 
        },
        {
-         "name": "3.jpg",
-         "description": "Ney letter | oil on canvas | 185 × 150 cm | 2015",
-         "isSquare": "true"
-
-       },
-       {
          "name": "4.jpg",
          "description": "Pop girl | oil on canvas | 120 × 80 cm | 2015",
          "isSquare": "false"
-
        },
        {
          "name": "5.jpg",
          "description": "Robin hood | oil on canvas | 120 × 80 cm | 2015",
          "isSquare": "false"
-
        },
        {
          "name": "6.jpg",
          "description": "The dance | oil on canvas | 150 × 100 cm | 2014",
+         "isSquare": "false"
+       },
+       {
+         "name": "10.jpg",
+         "description": "The woman | oil on canvas | 150 × 100 cm | 2016",
          "isSquare": "false"
 
        },
@@ -158,18 +159,17 @@
 
        },
        {
-         "name": "9.jpg",
-         "description": "The universe | oil on canvas | 180 × 150 cm | 2016",
+         "name": "3.jpg",
+         "description": "Ney letter | oil on canvas | 185 × 150 cm | 2015",
          "isSquare": "true"
 
        },
        {
-         "name": "10.jpg",
-         "description": "The woman | oil on canvas | 150 × 100 cm | 2016",
-         "isSquare": "false"
+         "name": "9.jpg",
+         "description": "The universe | oil on canvas | 180 × 150 cm | 2016",
+         "isSquare": "true"
 
        }
-
      ]
    },
    {
@@ -177,21 +177,9 @@
      "project": "Tangible thoughts",
      "description": "The most important objective of this project is to have a wide observation around eastern mystical philosophers\u2019 lives like Rumi and Hallaj and go further than their poems and small aspects and emphasize on the whole perspective of their lives. They have chosen the poetry to explain their concerns about meaning of life and in this project Homa wanted to visualize their way. In another word, make their lives tangible. With epitomizing their thoughts as the visual artist she has expressed herdelf by paintings, performance and installation. As most of Rumi\u2019s poems were made unconsciously and since he had improvised his poems of the book \u201CMasnavi\u201D in the class and in front of the students for ten years, he let us think about the aspect that the audiences have their own interpretation about the artworks concepts. \r\nHow does a part of the world, leave the world! \r\nHow does wetness, leave water! \r\nDon\u2019t' try to put out fire by throwing on more fire! \r\nDon't wash a wound with blood! \r\nNo matter how fast you run, your shadow keeps up! \r\nSometimes it's in front! \r\nOnly full overhead sun diminishes your shadow. \r\nBut that shadow has been serving you! \r\nWhat hurts you blesses you! \r\nDarkness is your candle. \r\nYour boundaries are your quest. \r\nI could explain this but it will break the glass cover on your heart! And there's no fixing that! \r\nYou must have shadow and light source both. \r\nListen! And lay your head under the tree of awe. \r\nWhen from that tree feathers and wings sprout on you! Be quieter than a dove, don't even open your mouth for even a coo! \r\nJelal'uddin Rumi\r\n\r\n\r\n\r\n\r\n",
      "images": [{
-         "name": "1.jpg",
-         "description": "The childhood | oil on canvas | 100 × 100 cm | 2015",
-         "isSquare": "true"
-
-       },
-       {
          "name": "2.jpg",
          "description": "The curtain | oil on canvas | 180 × 150 cm | 2018",
          "isSquare": "false"
-
-       },
-       {
-         "name": "3.jpg",
-         "description": "The dream | oil on canvas | 80 × 80 cm | 2018",
-         "isSquare": "true"
 
        },
        {
@@ -200,6 +188,25 @@
          "isSquare": "false"
 
        },
+       {
+         "name": "8.jpg",
+         "description": "You know me | oil on canvas | 100 × 70 cm | 2018",
+         "isSquare": "false"
+
+       },
+       {
+         "name": "1.jpg",
+         "description": "The childhood | oil on canvas | 100 × 100 cm | 2015",
+         "isSquare": "true"
+
+       },
+       {
+         "name": "3.jpg",
+         "description": "The dream | oil on canvas | 80 × 80 cm | 2018",
+         "isSquare": "true"
+
+       },
+
        {
          "name": "5.jpg",
          "description": "The hope | oil on canvas | 60 × 60 cm | 2018",
@@ -216,12 +223,6 @@
          "name": "7.jpg",
          "description": "The void set | oil on canvas | 180 × 150 cm | 2018",
          "isSquare": "true"
-
-       },
-       {
-         "name": "8.jpg",
-         "description": "You know me | oil on canvas | 100 × 70 cm | 2018",
-         "isSquare": "false"
 
        }
      ]

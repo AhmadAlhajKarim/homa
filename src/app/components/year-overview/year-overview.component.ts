@@ -18,7 +18,6 @@ export class YearOverviewComponent implements OnInit {
 
   pre(){
     this.myCarousel.pre();
-
   }
   _year = parseInt(this._route.snapshot.paramMap.get('year'));
   private _projects: Array<[]>;
@@ -33,6 +32,8 @@ export class YearOverviewComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
+
     this._route.paramMap.subscribe((el: any) => {
       this.http.get('../../../assets/data.json').subscribe((data: any) => {
         this._projects = data;
