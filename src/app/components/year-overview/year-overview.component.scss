@@ -64,3 +64,11 @@ only screen and (max-device-width: 767px) {
 .spacing {
   margin-top: 1em;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .spacing{
+    margin-top: -2em;
+  }
+
+}
