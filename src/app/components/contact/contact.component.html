@@ -1,32 +1,41 @@
+<nz-alert *ngIf="(succeeded)" nzType="success" nzDescription="'Email sent successfully. We will contact you soon'" nzShowIcon>
+</nz-alert>
+<nz-alert *ngIf="(succeeded == false)" nzType="error" nzDescription="{{error}}" nzShowIcon></nz-alert>
 <div class="container form-bg p-3 mt-5">
 
   <section class="container">
     <p>If you would like to contact Homa about a project proposal or any other enquiry please use the
-      following email address <a href="mailto:homaarkani@yahoo.com">homaarkani@yahoo.com</a> or the contact form below.
+      following email address <a href="mailto:homaarkani@yahoo.com">homaarkani@yahoo.com</a> or the contact form
+      below.
     </p>
   </section>
-  <form method="post" [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
-    <div class="form-group">
-      <label for="fullname">Name:</label>
-      <input type="text" class="form-control" name="fullname" formControlName="fullname">
-    </div>
+  <form method="post" [formGroup]="FormData" (ngSubmit)="sendEmail($event)">
+    <nz-form-control nzErrorTip="Please input a valid name">
+      <nz-input-group>
+        <label for="user_name">Name:</label>
+        <input type="text" class="form-control" name="user_name" formControlName="user_name">
+      </nz-input-group>
+    </nz-form-control>
 
-    <div class="form-group">
-      <label for="email">Email:
-      </label>
-      <input type="email" class="form-control" name="email" aria-describedby="emailHelp" formControlName="email">
-      <small id="emailHelp" class="form-text text-muted">We will never share your email with
-        others!</small>
-    </div>
+    <nz-form-control nzErrorTip="Please input a valid email">
+      <div class="form-group">
+        <label for="email">Email:
+        </label>
+        <input type="email" class="form-control" name="user_email" aria-describedby="emailHelp" formControlName="email">
+        <small id="emailHelp" class="form-text text-muted">We will never share your email with
+          others!</small>
+      </div>
+    </nz-form-control>
+    <nz-form-control nzErrorTip="Please input a valid message">
+      <div class="form-group">
+        <label for="message">Message:</label><br>
+        <textarea class="form-control" name="message" formControlName="message" rows="10"></textarea>
+      </div>
+    </nz-form-control>
 
-    <div class="form-group">
-      <label for="message">Message:</label><br>
-      <textarea class="form-control" name="message" formControlName="message" rows="10"></textarea>
-    </div>
 
     <button class="btn btn-green font-weight-bold"
-      style="background-color: gray; color: white; font-size: 1.3em; border-radius: 2em;">Send <i nz-icon
-        nzType="right"></i>
+      style="background-color: gray; color: white; font-size: 1.3em; border-radius: 2em;">Send
     </button>
   </form>
 </div>

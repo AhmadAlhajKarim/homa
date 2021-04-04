@@ -17,19 +17,28 @@ import { NzCarouselModule } from 'ng-zorro-antd/carousel';
 import { NzCardModule } from 'ng-zorro-antd/card';
 import { NzListModule } from 'ng-zorro-antd/list';
 import { NzCollapseModule } from 'ng-zorro-antd/collapse';
-
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { YearOverviewComponent } from './components/year-overview/year-overview.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProjectComponent } from './components/project/project.component';
 import { NewsComponent } from './components/news/news.component';
-
+import { NzAlertModule } from 'ng-zorro-antd/alert';
 
 registerLocaleData(en);
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, YearOverviewComponent, ContactComponent, AboutComponent, ProjectComponent, NewsComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    YearOverviewComponent,
+    ContactComponent,
+    AboutComponent,
+    ProjectComponent,
+    NewsComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -43,7 +52,10 @@ registerLocaleData(en);
     NzListModule,
     NzGridModule,
     NzCollapseModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NzButtonModule,
+    NzFormModule,
+    NzAlertModule,
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent],

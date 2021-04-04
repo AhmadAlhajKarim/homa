@@ -20,6 +20,13 @@
   text-justify: inter-word;
 }
 
-.spacing{
-   margin-top: 0;
+.spacing {
+  margin-top: 2em;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .spacing {
+    margin-top: -2em;
+  }
 }
