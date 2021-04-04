@@ -1,6 +1,6 @@
 <br>
 <nz-carousel [nzEffect]="effect" [nzAutoPlaySpeed]="4000" nzAutoPlay>
-  <div class="imgbox" nz-carousel-content *ngFor="let item of currentProjectImages$ | async">
+  <div nz-carousel-content *ngFor="let item of currentProjectImages$ | async">
     <!-- <p  class="font-weight-bold topbar-square">{{item.description}}</p> -->
     <!-- <p class="font-weight-bold topbar">{{item.description}}</p> -->
 
@@ -15,7 +15,7 @@
   < </button>
    <button (click)="next()" class="carousel-control-next black" type="button">>
 </button>
-<div class="mt-5 container">
+<div class="container spacing">
 
   <h4 *ngIf="project$.value !==null" class="text-center font-weight-bold text-uppercase "> {{project$.value.project }}
   </h4>

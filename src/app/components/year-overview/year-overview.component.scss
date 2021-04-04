@@ -4,7 +4,7 @@
 
 [nz-carousel-content] {
   text-align: center;
-  min-height: 355px;
+  min-height: 415px;
   overflow: hidden;
 }
 
@@ -39,10 +39,11 @@ only screen and (max-device-width: 767px) {
     display: none;
   }
 }
+
 @media only screen and (max-width: 600px) {
   [nz-carousel-content] {
     text-align: center;
-    min-height: 60px;
+    min-height: 88px;
     // margin-bottom: 20px;
     overflow: hidden;
   }
@@ -57,4 +58,8 @@ only screen and (max-device-width: 767px) {
 .text-align {
   text-align: justify;
   text-justify: inter-word;
+}
+
+.spacing {
+  margin-top: 1em;
 }

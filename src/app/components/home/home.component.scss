@@ -14,3 +14,34 @@ div {
   overflow: hidden;
   padding: 1rem;
 }
+
+#module {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 0;
+}
+
+
+#module #collapseExample.collapse:not(.show) {
+  display: block;
+  height: 0rem;
+  overflow: hidden;
+}
+
+#module #collapseExample.collapsing {
+  height: 1rem;
+}
+
+#module a.collapsed::after {
+  content: '+ Read More';
+}
+
+#module a:not(.collapsed)::after {
+  content: '- Show Less';
+}
+
+@media only screen and (max-width: 600px) {
+  img {
+    width: 83%;
+  }
+}
