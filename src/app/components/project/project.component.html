@@ -1,14 +1,20 @@
 <h1 class="text-center font-weight-bold mt-1">FLYING CARPET</h1>
-<nz-carousel nzAutoPlay [nzAutoPlaySpeed]="4000">
-  <div nz-carousel-content *ngFor="let index of array">
-    <img class="center-fit mt-2 img-thumbnail " nz-image nzSrc="../../../assets/projects/flying carpet/{{index}}"
-      alt="item.name" />
+
+<div class="mt-4">
+  <div class="carousel">
+    <ng-container *ngFor="let index of array ; let i = index">
+      <img class="center-fit mt-2 img-thumbnail" *ngIf="i === currentSlide" class="slide" nz-image
+        nzSrc="../../../assets/projects/flying carpet/{{index}}" />
+    </ng-container>
+
+    <!-- controls -->
+    <button class="carousel-control-prev " (click)="onPreviousClick()" type="button">
+      < </button> <button (click)="onNextClick()" class="carousel-control-next " type="button">>
+    </button>
   </div>
+</div>
 
-</nz-carousel>
-
-
-<section class="container spacing">
+<section class="container mt-5">
   <h3 class="text-center">New in the Pierkespark: </h3>
   <h6 class="text-center">”A flying carpet that flies to all neighborhoods and brings people together”</h6>
   <br>

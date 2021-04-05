@@ -1,16 +1,18 @@
-<br>
-<nz-carousel class="test" [nzEffect]="effect" [nzAutoPlaySpeed]="4000" nzAutoPlay>
-  <div nz-carousel-content *ngFor="let item of currentProjectImages$ | async">
-     <img class="center-fit img-thumbnail " nz-image nzSrc="../../../assets/{{project$.value.project}}//{{item.name}}"
-      alt="item.name" />
+<div class="mt-4">
+  <div class="carousel">
+    <ng-container *ngFor="let item of currentProjectImages$ | async; let i = index">
+      <img *ngIf="i === currentSlide" class="slide" nz-image
+        nzSrc="../../../assets/{{project$.value.project}}//{{item.name}}" alt="{{item.name}}" />
+      <p *ngIf="i === currentSlide" class="font-weight-bold mt-3">{{item.description}}</p>
+    </ng-container>
 
-    <p class="font-weight-bold topbar ">{{item.description}}</p>
+    <!-- controls -->
+    <button class="carousel-control-prev " (click)="onPreviousClick()" type="button">
+      < </button> <button (click)="onNextClick()" class="carousel-control-next " type="button">>
+    </button>
   </div>
-</nz-carousel>
-<button class="carousel-control-prev black" (click)="pre()" type="button">
-  < </button> <button (click)="next()" class="carousel-control-next black" type="button">>
-</button>
-<div class="container spacing">
+</div>
+<div class="container mt-2">
   <h4 *ngIf="project$.value !==null" class="text-center font-weight-bold text-uppercase "> {{project$.value.project }}
   </h4>
   <br>
@@ -20,3 +22,16 @@
     </p>
   </section>
 </div>
+
+
+<!-- <br>
+<nz-carousel [nzEffect]="effect" [nzAutoPlaySpeed]="4000" nzAutoPlay>
+  <div nz-carousel-content *ngFor="let item of currentProjectImages$ | async">
+    <img class="center-fit  " nz-image nzSrc="../../../assets/{{project$.value.project}}//{{item.name}}"
+      alt="item.name" />
+    <p class="font-weight-bold">{{item.description}}</p>
+  </div>
+</nz-carousel>
+<button class="carousel-control-prev black" (click)="pre()" type="button">
+  < </button> <button (click)="next()" class="carousel-control-next black" type="button">>
+</button> -->
