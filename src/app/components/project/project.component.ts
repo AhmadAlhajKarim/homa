@@ -9,7 +9,12 @@ export class ProjectComponent implements OnInit {
   constructor() {}
   array = ['1.jpeg', '2.jpeg', '3.jpeg'];
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    setTimeout(() => {
+      //<<<---using ()=> syntax
+      this.onNextClick();
+    }, 3000);
+  }
   currentSlide = 0;
 
   onPreviousClick() {

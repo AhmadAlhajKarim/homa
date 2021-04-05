@@ -21,12 +21,15 @@ export class YearOverviewComponent implements OnInit {
   private _projects: Array<[]>;
   private _project$: BehaviorSubject<any>;
   private _currentProjectImages$: BehaviorSubject<[]>;
-  dotPosition = 'top';
-  effect = 'scrollx';
+
   constructor(private _route: ActivatedRoute, private http: HttpClient) {
     this._projects = new Array();
     this._project$ = new BehaviorSubject<any>(null);
     this._currentProjectImages$ = new BehaviorSubject<[]>([]);
+    setTimeout(() => {
+      //<<<---using ()=> syntax
+      this.onNextClick();
+    }, 3000);
   }
 
   ngOnInit(): void {
