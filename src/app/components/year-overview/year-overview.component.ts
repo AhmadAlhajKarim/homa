@@ -1,23 +1,33 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { NzCarouselComponent } from 'ng-zorro-antd/carousel';
+import { interval, Subscription } from 'rxjs';
 import { BehaviorSubject } from 'rxjs';
-import { style, animate, animation } from '@angular/animations';
+import {
+  style,
+  animate,
+  animation,
+  transition,
+  trigger,
+} from '@angular/animations';
 @Component({
   selector: 'app-year-overview',
   templateUrl: './year-overview.component.html',
   styleUrls: ['./year-overview.component.scss'],
+  animations: [
+    trigger('carouselAnimation', [
+      transition('void => *', [
+        style({ opacity: 0 }),
+        animate('300ms', style({ opacity: 1 })),
+      ]),
+    ]),
+  ],
 })
 export class YearOverviewComponent implements OnInit {
-  fadeIn = animation([
-    style({ opacity: 0 }), // start state
-    animate('300ms', style({ opacity: 1 })),
-  ]);
-
-  fadeOut = animation([animate('300ms', style({ opacity: 0 }))]);
-
   _year = parseInt(this._route.snapshot.paramMap.get('year'));
+  subscription: Subscription;
+  currentSlide = 0;
+
   private _projects: Array<[]>;
   private _project$: BehaviorSubject<any>;
   private _currentProjectImages$: BehaviorSubject<[]>;
@@ -26,10 +36,8 @@ export class YearOverviewComponent implements OnInit {
     this._projects = new Array();
     this._project$ = new BehaviorSubject<any>(null);
     this._currentProjectImages$ = new BehaviorSubject<[]>([]);
-    setTimeout(() => {
-      //<<<---using ()=> syntax
-      this.onNextClick();
-    }, 3000);
+    const source = interval(4000);
+    this.subscription = source.subscribe((val) => this.autoPlay());
   }
 
   ngOnInit(): void {
@@ -55,20 +63,29 @@ export class YearOverviewComponent implements OnInit {
   get currentProjectImages$() {
     return this._currentProjectImages$;
   }
-
-  currentSlide = 0;
-
+  goTo(index) {
+    this.subscription.unsubscribe();
+    this.currentSlide = index;
+  }
   onPreviousClick() {
+    this.subscription.unsubscribe();
+
     const previous = this.currentSlide - 1;
     this.currentSlide =
       previous < 0 ? this._currentProjectImages$.value.length - 1 : previous;
-    console.log('previous clicked, new current slide is: ', this.currentSlide);
   }
 
   onNextClick() {
+    this.subscription.unsubscribe();
+
     const next = this.currentSlide + 1;
     this.currentSlide =
       next === this._currentProjectImages$.value.length ? 0 : next;
-    console.log('next clicked, new current slide is: ', this.currentSlide);
+  }
+
+  autoPlay() {
+    const next = this.currentSlide + 1;
+    this.currentSlide =
+      next === this._currentProjectImages$.value.length ? 0 : next;
   }
 }

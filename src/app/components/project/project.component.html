@@ -1,20 +1,29 @@
 <h1 class="text-center font-weight-bold mt-1">FLYING CARPET</h1>
 
 <div class="mt-4">
-  <div class="carousel">
-    <ng-container *ngFor="let index of array ; let i = index">
-      <img class="center-fit mt-2 img-thumbnail" *ngIf="i === currentSlide" class="slide" nz-image
-        nzSrc="../../../assets/projects/flying carpet/{{index}}" />
-    </ng-container>
+  <div class="carousel m-1">
 
+    <ng-container *ngFor="let index of array ; let i = index">
+
+      <img (swipeleft)="onPreviousClick()" (swiperight)="onNextClick()" class="center-fit mt-2 img-thumbnail"
+        *ngIf="i === currentSlide" class="slide" nz-image nzSrc="../../../assets/projects/flying carpet/{{index}}"
+        @carouselAnimation />
+
+    </ng-container>
+    <ol class="carousel-indicators carousel-indicators-numbers pb-2">
+      <li [ngClass]="currentSlide === 0 ? 'active': ''" (click)="goTo(0)"></li>
+      <li [ngClass]="currentSlide === 1 ? 'active': ''" (click)="goTo(1)"></li>
+      <li [ngClass]="currentSlide === 2 ? 'active': ''" (click)="goTo(2)"></li>
+    </ol>
     <!-- controls -->
     <button class="carousel-control-prev " (click)="onPreviousClick()" type="button">
       < </button> <button (click)="onNextClick()" class="carousel-control-next " type="button">>
     </button>
+
   </div>
 </div>
 
-<section class="container mt-5">
+<section class="container spacing">
   <h3 class="text-center">New in the Pierkespark: </h3>
   <h6 class="text-center">”A flying carpet that flies to all neighborhoods and brings people together”</h6>
   <br>

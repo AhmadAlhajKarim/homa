@@ -1,11 +1,18 @@
 <div class="mt-4">
-  <div class="carousel">
+  <div class="carousel m-1">
     <ng-container *ngFor="let item of currentProjectImages$ | async; let i = index">
-      <img *ngIf="i === currentSlide" class="slide" nz-image
-        nzSrc="../../../assets/{{project$.value.project}}//{{item.name}}" alt="{{item.name}}" />
+      <img (swipeleft)="onPreviousClick()" (swiperight)="onNextClick()" *ngIf="i === currentSlide" class="slide"
+        nz-image nzSrc="../../../assets/{{project$.value.project}}//{{item.name}}" alt="{{item.name}}"
+        @carouselAnimation />
       <p *ngIf="i === currentSlide" class="font-weight-bold mt-3">{{item.description}}</p>
+      <div class="isBigScreen">
+        <ol class="carousel-indicators carousel-indicators-numbers pb-5">
+          <div *ngFor="let item of currentProjectImages$ | async; let i = index">
+            <li [ngClass]="currentSlide === i ? 'active': ''" (click)="goTo(i)"></li>
+          </div>
+        </ol>
+      </div>
     </ng-container>
-
     <!-- controls -->
     <button class="carousel-control-prev " (click)="onPreviousClick()" type="button">
       < </button> <button (click)="onNextClick()" class="carousel-control-next " type="button">>
